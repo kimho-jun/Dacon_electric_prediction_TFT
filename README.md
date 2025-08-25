@@ -24,3 +24,5 @@
 5. Gated Residual 네트워크 (GRN)
     - 각 레이어에서 정보의 흐름을 조정하는 역할로, Redisual Connection을 통해 모델 안정성 보장
     - 효과적인 학습을 위한 구조이며 정보 손실 방지 
+
+6. 다중 시점 예측( Multi-Horizon Forecast)에 좋은 성능을 보임
