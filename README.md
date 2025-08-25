@@ -26,4 +26,4 @@
     - 효과적인 학습을 위한 구조이며 정보 손실 방지 
 
 6. 다중 시점 예측( Multi-Horizon Forecast)에 좋은 성능을 보임
-   -> 모델링의 목적이 8월 25일~31일 사이 1시간 단위 전력 소비량을 예측한다는 점에서 Temporal Fusion Transformer 선택
+    - 모델링의 목적이 8월 25일~31일 사이 1시간 단위 전력 소비량을 예측한다는 점에서 Temporal Fusion Transformer 선택
