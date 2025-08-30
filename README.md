@@ -1,6 +1,6 @@
 # 건물별 전력소비량 예측 모델링
 
-- 2025년 8월에 열린 전력소비량 예측 경진대회 참가
+- Dacon 경진대회 데이터 사용
 - 사용한 모델 : Temporal Fusion Transformer(TFT)
 
 - TFT 모델의 아키텍처 
