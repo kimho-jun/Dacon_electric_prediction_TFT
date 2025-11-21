@@ -86,7 +86,7 @@ def DataFrame_Summary(df):
 -> 훈련 데이터를 기반으로 Datasets을 구성
 -> 검증, 테스트 데이터는 훈련데이터셋.from_datasets()을 사용하여 생성
 > - 훈련 데이터를 훈련 + 검증으로 분할하기 전, TimeSeriesDataset은 예측하기 시점의 이전 시점을 encoder_length로 사용  
->- 특히 테스트 데이터는 전체를 전부 예측하기 때문에 encoder_length가 0이 되는 문제가 발생하고, 이를 해결하기 위해 훈련 데이터를 분할하기 전에 일부를 떼어 테스트 데이터의 encoder_length로 사용하였다.
+> - 특히 테스트 데이터는 전체를 전부 예측하기 때문에 encoder_length가 0이 되는 문제가 발생하고, 이를 해결하기 위해 훈련 데이터를 분할하기 전에 일부를 떼어 테스트 데이터의 encoder_length로 사용하였다.
 
 
 - 사용 모델
@@ -164,7 +164,10 @@ df['is_offday'] =  ((df['is_holiday'] == 1) | (df['weekday'] >= 5)).map({False: 
 
 `3. peak_time`
 -> 시간대 별 소비량 구분
-![](https://velog.velcdn.com/images/yjhut/post/c1fe1fbf-f3bb-4c9c-9058-19094921050f/image.png) 위 그래프는 시간 기준 평균 소비량 시각화 결과.... 7~20시까지 peak_time : 1 그외 시간은 0
+
+![](https://velog.velcdn.com/images/yjhut/post/c1fe1fbf-f3bb-4c9c-9058-19094921050f/image.png) 
+
+위 그래프는 시간 기준 평균 소비량 시각화 결과.... 7~20시까지 peak_time : 1 그외 시간은 0
 
 
 Validation Data SMAPE : `0.075`
